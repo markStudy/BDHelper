@@ -15,6 +15,7 @@
 		B427E04A1E9DFFE800651B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B427E0481E9DFFE800651B73 /* LaunchScreen.storyboard */; };
 		B427E0551E9DFFE800651B73 /* BDHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B427E0541E9DFFE800651B73 /* BDHelperTests.m */; };
 		B427E0601E9DFFE800651B73 /* BDHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B427E05F1E9DFFE800651B73 /* BDHelperUITests.m */; };
+		B427E0801E9E089300651B73 /* MKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B427E07B1E9E089300651B73 /* MKHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B427E05B1E9DFFE800651B73 /* BDHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B427E05F1E9DFFE800651B73 /* BDHelperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDHelperUITests.m; sourceTree = "<group>"; };
 		B427E0611E9DFFE800651B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B427E07A1E9E089300651B73 /* MKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKHelper.h; sourceTree = "<group>"; };
+		B427E07B1E9E089300651B73 /* MKHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		B427E0391E9DFFE800651B73 /* BDHelper */ = {
 			isa = PBXGroup;
 			children = (
+				B427E0791E9E089300651B73 /* MKHelper */,
 				B427E03D1E9DFFE800651B73 /* AppDelegate.h */,
 				B427E03E1E9DFFE800651B73 /* AppDelegate.m */,
 				B427E0401E9DFFE800651B73 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				B427E0611E9DFFE800651B73 /* Info.plist */,
 			);
 			path = BDHelperUITests;
+			sourceTree = "<group>";
+		};
+		B427E0791E9E089300651B73 /* MKHelper */ = {
+			isa = PBXGroup;
+			children = (
+				B427E07A1E9E089300651B73 /* MKHelper.h */,
+				B427E07B1E9E089300651B73 /* MKHelper.m */,
+			);
+			path = MKHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +292,7 @@
 				B427E0421E9DFFE800651B73 /* ViewController.m in Sources */,
 				B427E03F1E9DFFE800651B73 /* AppDelegate.m in Sources */,
 				B427E03C1E9DFFE800651B73 /* main.m in Sources */,
+				B427E0801E9E089300651B73 /* MKHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2KMB3EQRW5;
 				INFOPLIST_FILE = BDHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bond.BDHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2KMB3EQRW5;
 				INFOPLIST_FILE = BDHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bond.BDHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +534,7 @@
 				B427E0661E9DFFE800651B73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B427E0671E9DFFE800651B73 /* Build configuration list for PBXNativeTarget "BDHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +543,7 @@
 				B427E0691E9DFFE800651B73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B427E06A1E9DFFE800651B73 /* Build configuration list for PBXNativeTarget "BDHelperUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +552,7 @@
 				B427E06C1E9DFFE800651B73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

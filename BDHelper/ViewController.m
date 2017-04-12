@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "MKHelper.h"
+
 
 @interface ViewController ()
 
@@ -16,8 +18,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self getDate];
 }
+
+
+- (void)getDate {
+    
+    NSString *currentTimestamp = [MKDateHelper getCurrentTimestamp];
+    NSLog(@"currentTimestamp == %@",currentTimestamp);
+    
+    
+    NSString *timestamp = [MKDateHelper timestampChangesStandarTime:currentTimestamp dateFormatter:nil];
+    NSLog(@"timestamp == %@",timestamp);
+    
+    NSString *week = [MKDateHelper timeToweek:timestamp dateFormatter:nil];
+    NSLog(@"week == %@",week);
+    
+    
+    NSString *timestampDate = [MKDateHelper timestampChangesStandarTime:currentTimestamp dateFormatter:minFormatter];
+    NSLog(@"timestampDate == %@",timestampDate);
+    
+    NSString *phoneModel = [MKDeviceInfoHelper phoneModels];
+    NSLog(@"phoneModel == %@",phoneModel);
+    
+    NSString *phoneVersion = [MKDeviceInfoHelper phoneSystemVersion];
+    NSLog(@"phoneVersion == %@",phoneVersion);
+}
+
 
 
 - (void)didReceiveMemoryWarning {
