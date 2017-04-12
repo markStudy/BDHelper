@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/markStudy/BDHelper.git" }
 
-  s.source_files  = "BDHelper", "BDHelper/**/*.{h,m}"
+#s.source_files  = "BDHelper", "BDHelper/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.dependency "JSONKit", "~> 1.4"
