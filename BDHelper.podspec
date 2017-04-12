@@ -4,11 +4,11 @@ Pod::Spec.new do |s|
 
   s.name         = "BDHelper"
   s.version      = "0.0.1"
-  s.summary      = "A short description of BDHelper."
+  s.summary      = "a help file for your workbace"
 
-  s.description  = "nothing"
+  s.description  = "a help file for your workbace , you can use it eazy"
 
-  s.homepage     = "http://EXAMPLE/BDHelper"
+  s.homepage     = "https://github.com/markStudy/BDHelper"
 
   s.license      = "MIT"
 
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/markStudy/BDHelper.git" }
+  s.source       = { :git => "https://github.com/markStudy/BDHelper.git", :tag => s.version }
 
 # s.source_files  = "BDHelper", "BDHelper/**/*.{h,m}"
 # s.exclude_files = "Classes/Exclude"
