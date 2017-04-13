@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BDHelper"
-  s.version      = "0.0.2"
+  s.version      = "0.02"
   s.summary      = "a help file for your workbace"
 
   s.description  = "a help file for your workbace , you can use it eazy"
