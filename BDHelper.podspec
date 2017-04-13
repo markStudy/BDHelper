@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/markStudy/BDHelper.git", :tag => s.version }
 
+  s.requires_arc     = true
+
 # s.source_files  = "BDHelper", "BDHelper/**/*.{h,m}"
 # s.exclude_files = "Classes/Exclude"
 
